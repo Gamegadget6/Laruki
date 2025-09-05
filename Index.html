@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="Util.css" />
     <link rel="stylesheet" href="style.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -13,206 +12,192 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <title>Laruki | Cloud Hosting Platform</title>
 </head>
 <body>
-  <div class="navbar">
-    <div class="container flex">
-      <h1 class="logo">Loruki.</h1>
-      <nav>
-        <ul>
-          <li><a href="Index.html">Home</a></li>
-          <li><a href="Features.html">Features</a></li>
-          <li><a href="Docs.html">Docs</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-
-  <section class="showcase">
-    <div class="container grid">
-      <div class="showcase-text">
-        <h1>Easier Deployment</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Accusantium numquam cum fuga eaque deserunt explicabo!
-        </p>
-        <a href="Features.html" class="btn btn-outline">Read More</a>
-      </div>
-
-      <div class="showcase-form card">
-        <h2>Request a Demo</h2>
-
-        <form
-  name="contact"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  action="#success"
->
-
-          <input type="hidden" name="form-name" value="contact" />
-          <p class="hidden">
-            <label>
-              Don’t fill this if you’re human:
-              <input name="bot-field" />
-            </label>
-          </p>
-
-          <div class="form-control">
-            <input type="text" name="Name" placeholder="Name" required />
-          </div>
-          <div class="form-control">
-            <input
-              type="text"
-              name="Company"
-              placeholder="Company Name"
-              required
-            />
-          </div>
-          <div class="form-control">
-            <input type="email" name="Email" placeholder="Email" required />
-          </div>
-
-          <input type="submit" value="Send" class="btn btn-primary" />
-        </form>
-
-        <div id="form-success" class="form-success-message hidden">
-          <h3>✅ Thank you!</h3>
-          <p>Your message has been submitted. We'll get back to you soon.</p>
+    <div class="navbar"> 
+        <div class="container flex">
+            <h1 class="logo">Loruki.</h1>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Features.html">Features</a></li>
+                    <li><a href="Docs.html">Docs</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
     </div>
-  </section>
 
-  <section class="stats">
-    <div class="container">
-      <h3 class="stats-heading text-centre my-1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-        maiores, atque temporibus perferendis cupiditate suscipit?
-      </h3>
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>Easier Deployment</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium numquam cum fuga eaque deserunt explicabo!</p>
+                <a href="Features.html" class="btn btn-outline">Read More</a>
+            </div>
 
-      <div class="grid grid-3 text-center my-4">
-        <div>
-          <i class="fas fa-server fa-3x"></i>
-          <h3>10,347,885</h3>
-          <p class="text-secondary">Deployments</p>
+            <div class="showcase-form card">
+                <h2>Request a Demo</h2>
+
+                <form
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  onsubmit="handleSubmit(event)"
+                >
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p class="hidden">
+                        <label>Don’t fill this if you’re human: <input name="bot-field" /></label>
+                    </p>
+
+                    <div class="form-control">
+                        <input type="text" name="Name" placeholder="Name" required />
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="Company" placeholder="Company Name" required />
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="Email" placeholder="Email" required />
+                    </div>
+
+                    <input type="submit" value="Send" class="btn btn-primary" />
+                </form>
+
+                <div id="form-success" class="form-success-message hidden">
+                    <h3>✅ Thank you!</h3>
+                    <p>Your message has been submitted. We'll get back to you soon.</p>
+                </div>
+            </div>
         </div>
-        <div>
-          <i class="fas fa-upload fa-3x"></i>
-          <h3>987 TB</h3>
-          <p class="text-secondary">Published</p>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <h3 class="stats-heading text-centre my-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam maiores, atque temporibus perferendis cupiditate suscipit?
+            </h3>
+
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <i class="fas fa-server fa-3x"></i>
+                    <h3>10,347,885</h3>
+                    <p class="text-secondary">Deployments</p>
+                </div>
+                <div>
+                    <i class="fas fa-upload fa-3x"></i>
+                    <h3>987 TB</h3>
+                    <p class="text-secondary">Published</p>
+                </div>
+                <div>
+                    <i class="fas fa-project-diagram fa-3x"></i>
+                    <h3>2,456,778</h3>
+                    <p class="text-secondary">Projects</p>
+                </div>
+            </div>
         </div>
-        <div>
-          <i class="fas fa-project-diagram fa-3x"></i>
-          <h3>2,456,778</h3>
-          <p class="text-secondary">Projects</p>
+    </section>
+
+    <section class="cli">
+        <div class="container grid">
+            <img src="Images/cli.png" alt="" />
+            <div class="card"><h3>Easy to use, Cross Platform CLI</h3></div>
+            <div class="card"><h3>Deploy in seconds</h3></div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="cli">
-    <div class="container grid">
-      <img src="Images/cli.png" alt="" />
-      <div class="card">
-        <h3>Easy to use, Cross Platform CLI</h3>
-      </div>
-      <div class="card">
-        <h3>Deploy in seconds</h3>
-      </div>
-    </div>
-  </section>
-
-  <section class="cloud bg-primary my-2 py-2">
-    <div class="container grid">
-      <div class="text-centre">
-        <h2 class="lg">Extreme Cloud Hosting</h2>
-        <p class="lead my-1">
-          Cloud Hosting like you've never seen. Fast, efficient and scalable.
-        </p>
-        <a href="Features.html" class="btn btn-dark">Read More </a>
-      </div>
-      <img src="Images/cloud.png" alt="" />
-    </div>
-  </section>
-
-  <section class="languages">
-    <h2 class="md text-center my-2">Supported Languages</h2>
-    <div class="container flex">
-      <div class="card">
-        <h4>Node.js</h4>
-        <img src="Images/Logos/node.png" alt="" />
-      </div>
-      <div class="card">
-        <h4>Go</h4>
-        <img src="Images/Logos/go.png" alt="" />
-      </div>
-      <div class="card">
-        <h4>Ruby</h4>
-        <img src="Images/Logos/ruby.png" alt="" />
-      </div>
-      <div class="card">
-        <h4>C#</h4>
-        <img src="Images/Logos/csharp.png" alt="" />
-      </div>
-      <div class="card">
-        <h4>PHP</h4>
-        <img src="Images/Logos/php.png" alt="" />
-      </div>
-      <div class="card">
-        <h4>Python</h4>
-        <img src="Images/Logos/python.png" alt="" />
-      </div>
-      <div class="card">
-        <h4>Scala</h4>
-        <img src="Images/Logos/scala.png" alt="" />
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer bg-dark py-5">
-    <div class="container grid grid-3">
-      <div>
-        <h1>Loruki</h1>
-        <p>Copyright &copy; 2025</p>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="Index.html">Home</a>
-            <a href="Features.html">Features</a>
-            <a href="Docs.html">Docs</a>
-          </li>
-        </ul>
-      </nav>
-      <nav>
-        <div class="social">
-          <a href="#">
-            <i class="fab fa-github fa-2x"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-facebook fa-2x"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-twitter fa-2x"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-instagram fa-2x"></i>
-          </a>
+    <section class="cloud bg-primary my-2 py-2">
+        <div class="container grid">
+            <div class="text-centre">
+                <h2 class="lg">Extreme Cloud Hosting</h2>
+                <p class="lead my-1">
+                    Cloud Hosting like you've never seen. Fast, efficient and scalable.
+                </p>
+                <a href="Features.html" class="btn btn-dark">Read More </a>
+            </div>
+            <img src="Images/cloud.png" alt="" />
         </div>
-      </nav>
-    </div>
-  </footer>
+    </section>
 
-  <script>
-    window.addEventListener("DOMContentLoaded", function () {
-      if (window.location.hash === "#success") {
-        const msg = document.getElementById("form-success");
-        if (msg) msg.classList.remove("hidden");
+    <section class="languages">
+        <h2 class="md text-center my-2">Supported Languages</h2>
+        <div class="container flex">
+            <div class="card">
+                <h4>Node.js</h4>
+                <img src="Images/Logos/node.png" alt="" />
+            </div>
+            <div class="card">
+                <h4>Go</h4>
+                <img src="Images/Logos/go.png" alt="" />
+            </div>
+            <div class="card">
+                <h4>Ruby</h4>
+                <img src="Images/Logos/ruby.png" alt="" />
+            </div>
+            <div class="card">
+                <h4>C#</h4>
+                <img src="Images/Logos/csharp.png" alt="" />
+            </div>
+            <div class="card">
+                <h4>PHP</h4>
+                <img src="Images/Logos/php.png" alt="" />
+            </div>
+            <div class="card">
+                <h4>Python</h4>
+                <img src="Images/Logos/python.png" alt="" />
+            </div>
+            <div class="card">
+                <h4>Scala</h4>
+                <img src="Images/Logos/scala.png" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Loruki</h1>
+                <p>Copyright &copy; 2025</p>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="Index.html">Home</a>
+                        <a href="Features.html">Features</a>
+                        <a href="Docs.html">Docs</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <div class="social">
+                    <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+      function handleSubmit(event) {
+        event.preventDefault();
+
+        const form = event.target;
+
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(new FormData(form)).toString(),
+        })
+          .then(() => {
+            document.getElementById("form-success").classList.remove("hidden");
+            form.reset();
+          })
+          .catch(() => {
+            alert("Oops! There was a problem submitting your form");
+          });
       }
-    });
-  </script>
+    </script>
 </body>
 </html>
