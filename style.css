@@ -17,7 +17,6 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #333;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
 ul{
@@ -298,6 +297,7 @@ code, pre {
     }
     .showcase {
         height: auto;
+        overflow-x: hidden;
     }
 
     .showcase-text {
@@ -375,6 +375,13 @@ code, pre {
 
 /*Mobiles and under*/
 @media (max-width: 576px){
+    .showcase h1{
+        font-size: 32px;
+    }
+    .showcase p{
+        width: 380px;
+        height: auto;
+    }
     .navbar {
         height: 110px;
     }
