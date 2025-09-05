@@ -307,9 +307,9 @@ code, pre {
     }
 
     .showcase-form {
-        justify-self: center;
-        margin: auto;
-        animation: slideInFromBottom 1s ease-out;
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
     }
 
     .features-head img, .docs-head img, .features-sub-head img {
@@ -378,11 +378,12 @@ code, pre {
     .showcase h1{
         font-size: 32px;
     }
-    .showcase p{
-        width: 380px;
-        height: auto;
-        padding-left: 10px;
+    .showcase p {
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
     }
+
     .navbar {
         height: 110px;
     }
