@@ -381,6 +381,7 @@ code, pre {
     .showcase p{
         width: 380px;
         height: auto;
+        padding-left: 10px;
     }
     .navbar {
         height: 110px;
